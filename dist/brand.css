@@ -1,0 +1,26 @@
+.brand-tile {
+  display: grid;
+  width: 100%;
+  height: 100%;
+  place-content: center;
+  gap: 4px;
+  color: #fff;
+  text-align: center;
+  text-transform: uppercase;
+}
+.brand-tile b { font-size: 30px; letter-spacing: -.06em; }
+.brand-tile small {
+  max-width: 95px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 8px;
+  letter-spacing: .08em;
+  white-space: nowrap;
+  opacity: .78;
+}
+.group-auto { background: linear-gradient(145deg,#172032,#3970b8); }
+.group-trade { background: linear-gradient(145deg,#172c39,#10a38d); }
+.group-build { background: linear-gradient(145deg,#3a2417,#d18734); }
+.group-food { background: linear-gradient(145deg,#491d22,#e44f55); }
+.group-experience { background: linear-gradient(145deg,#182f4d,#31a9d9); }
+.group-creative { background: linear-gradient(145deg,#32204c,#a65cda); }
