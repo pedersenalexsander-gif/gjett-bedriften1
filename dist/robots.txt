@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://nin.no/sitemap.xml

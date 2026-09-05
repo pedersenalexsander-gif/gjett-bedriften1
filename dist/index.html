@@ -1,39 +1,90 @@
 <!doctype html>
-<html lang="nb">
+<html lang="no">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="theme-color" content="#0d1326">
-  <title>Gjett bedriften</title>
-  <meta name="description" content="Hvor godt kjenner du bedriftene?">
+  <title>Næring i Nord | Google-synlighet og digital markedsføring</title>
+  <meta name="description" content="Næring i Nord hjelper bedrifter med Google Bedriftsprofiler, lokal SEO, innhold, anmeldelser og digital profilering.">
+  <link rel="canonical" href="https://nin.no/">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="brand.css">
+  <meta property="og:title" content="Næring i Nord | Bli enklere å finne på Google">
+  <meta property="og:description" content="Google Bedriftsprofiler, lokal SEO, innhold og digital profilering for bedrifter.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://nin.no/">
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ProfessionalService","name":"Næring i Nord AS","url":"https://nin.no/","telephone":"+47 76 94 00 00","email":"kontakt@nin.no","address":{"@type":"PostalAddress","streetAddress":"Bjønnesmoen 17","postalCode":"8521","addressLocality":"Ankenes","addressCountry":"NO"},"areaServed":"NO","sameAs":["https://no.linkedin.com/company/n%C3%A6ring-i-nord"]}</script>
 </head>
 <body>
-  <div class="ambient one"></div><div class="ambient two"></div>
-  <main class="shell">
-    <header class="topbar"><a class="brand" href="#"><span class="brand-mark">G</span><span>Gjett bedriften</span></a><div class="record">🏆 Rekord: <strong id="record">0</strong></div></header>
-    <section id="start" class="screen active">
-      <div class="eyebrow">NORSK BEDRIFTSQUIZ · VANSKELIGERE</div>
-      <h1>Hvor godt kjenner du<br><span>bedriftene?</span></h1>
-      <p class="intro">Detaljer, tjenester og merkeuttrykk. Svaralternativene kommer nå fra samme bransje.</p>
-      <div class="mode-grid">
-        <button class="mode selected" data-mode="mixed"><span class="mode-icon">✦</span><b>Blandet</b><small>Alle typer spørsmål</small></button>
-        <button class="mode" data-mode="logo"><span class="mode-icon">◉</span><b>Merkeutsnitt</b><small>Unikt uttrykk per bedrift</small></button>
-        <button class="mode" data-mode="category"><span class="mode-icon">▦</span><b>Tjenester</b><small>Velg presis tjeneste</small></button>
-        <button class="mode" data-mode="clue"><span class="mode-icon">❝</span><b>Detaljspørsmål</b><small>Historie og særtrekk</small></button>
+<a class="skip-link" href="#innhold">Hopp til innhold</a>
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="logo" href="index.html" aria-label="Næring i Nord forside"><span class="logo-mark">NIN</span><span class="logo-name">Næring i Nord</span></a>
+    <button class="menu-button" type="button" aria-label="Åpne meny" aria-expanded="false" aria-controls="hovedmeny"><span></span></button>
+    <nav class="nav" id="hovedmeny" aria-label="Hovedmeny">
+      <a href="index.html" aria-current="page">Forside</a><a href="tjenester.html">Tjenester</a><a href="ansatte.html">Teamet</a><a href="om-oss.html">Om oss</a><a href="galleri.html">Arbeid</a><a href="kontakt.html">Kontakt</a>
+    </nav>
+  </div>
+</header>
+<main id="innhold">
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <p class="eyebrow">Digital synlighet fra Nord-Norge</p>
+        <h1>Bli funnet når kundene søker.</h1>
+        <p class="lead">Vi jobber med Google Bedriftsprofiler, lokal SEO, innhold og digital profilering. Målet er enkelt: gjøre det lettere for riktige kunder å finne og velge bedriften din.</p>
+        <div class="hero-actions"><a class="button" href="tjenester.html">Se tjenestene</a><a class="button light" href="kontakt.html">Ta kontakt</a></div>
       </div>
-      <div class="round-options"><span>Antall spørsmål</span><div><button data-count="5">5</button><button class="selected" data-count="10">10</button><button data-count="15">15</button></div></div>
-      <button id="play" class="primary">Start spillet <span>→</span></button>
-      <p class="database"><span></span><strong id="companyCount">0</strong> bedrifter i spillet</p>
-    </section>
-    <section id="game" class="screen">
-      <div class="game-head"><button id="quit" class="icon-btn">×</button><div class="progress-wrap"><div class="progress-text"><span id="questionNumber"></span><span id="scoreTop"></span></div><div class="progress"><i id="progressBar"></i></div></div></div>
-      <div class="stats"><div><small>TID</small><strong id="timer">18</strong></div><div><small>STREAK</small><strong id="streak">🔥 0</strong></div><div><small>POENG</small><strong id="score">0</strong></div></div>
-      <article class="question-card"><span id="questionType" class="tag"></span><div id="visual" class="visual"></div><h2 id="question"></h2><p id="subquestion"></p><div id="answers" class="answers"></div><div id="feedback" class="feedback"></div><button id="next" class="primary hidden">Neste spørsmål <span>→</span></button></article>
-    </section>
-    <section id="result" class="screen result"><div id="resultEmoji" class="result-emoji">🏆</div><div class="eyebrow">RUNDE FULLFØRT</div><h2 id="resultTitle"></h2><p id="resultText"></p><div class="result-score"><strong id="finalScore">0</strong><span>POENG</span></div><div class="result-grid"><div><b id="correctCount">0</b><small>Riktige</small></div><div><b id="bestStreak">0</b><small>Beste streak</small></div><div><b id="accuracy">0%</b><small>Treffsikkerhet</small></div></div><button id="again" class="primary">Spill igjen <span>↻</span></button></section>
-  </main>
-  <script src="app.js"></script>
+      <div class="hero-media">
+        <img src="https://ninord.localo.site/cdn-cgi/image/compression%3Dfast%2Cdpr%3D1%2Cwidth%3D1080/https%3A/lh3.googleusercontent.com/f_wxQsYER7ujzXWsJY83sM_GDYTWpyGPRWTHqrBSPrY5b-5JKSHhiWYFeEgggmn_bmzqIFqI19RgOs_VbQ%3Ds0" alt="Næring i Nord profilering på mobil og datamaskin" loading="eager">
+        <div class="hero-note"><span>Næring i Nord</span><span>Google og digital synlighet</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section soft">
+    <div class="container">
+      <div class="intro-row">
+        <div><p class="eyebrow">Hva vi gjør</p><h2>Synlighet med konkrete arbeidsområder.</h2></div>
+        <div><p>Vi arbeider med det kunder faktisk møter i Google-søk, kartresultater og bedriftens digitale flater. Det betyr ryddige bedriftsopplysninger, relevant innhold, lokal søkemotoroptimalisering og løpende oppfølging.</p></div>
+      </div>
+      <div class="card-grid" style="margin-top:48px">
+        <article class="card"><span class="number">01</span><h3>Google Bedriftsprofil</h3><p>Oppsett, kvalitetssikring, optimalisering, tjenester, produkter, bilder og innhold.</p></article>
+        <article class="card"><span class="number">02</span><h3>Lokal SEO</h3><p>Arbeid med relevans og lokal synlighet slik at bedriften blir enklere å finne i aktuelle søk.</p></article>
+        <article class="card"><span class="number">03</span><h3>Innhold</h3><p>SEO-artikler, tekst, foto og video til digitale flater, med en tydelig plan for hva som skal publiseres.</p></article>
+        <article class="card"><span class="number">04</span><h3>Anmeldelser</h3><p>Struktur rundt kundeomtaler, oppfølging og løsninger som gjør det enklere å be om tilbakemeldinger.</p></article>
+        <article class="card"><span class="number">05</span><h3>Analyse og oppfølging</h3><p>Gjennomgang av utvikling, innhold og synlighet med fokus på det som bør justeres videre.</p></article>
+        <article class="card"><span class="number">06</span><h3>Profilering</h3><p>Nettsider, design og innholdsproduksjon leveres i tilknytning til Næring i Nord og Nordfra-miljøet.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <p class="eyebrow">Slik jobber vi</p>
+      <h2>Fra kartlegging til løpende forbedring.</h2>
+      <div class="process-grid" style="margin-top:42px">
+        <div class="process-item"><strong>1. Kartlegging</strong><p>Vi ser på dagens profil, søkesituasjon, informasjon og innhold før vi bestemmer hva som faktisk bør gjøres.</p></div>
+        <div class="process-item"><strong>2. Produksjon og optimalisering</strong><p>Vi bygger ut profilen med riktige kategorier, tjenester, beskrivelser, bilder og annet relevant innhold.</p></div>
+        <div class="process-item"><strong>3. Oppfølging</strong><p>Synlighet er ikke en engangsjobb. Innhold og profil må holdes ryddig, oppdatert og relevant over tid.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section dark">
+    <div class="container cta-band">
+      <div><p class="eyebrow">Neste steg</p><h2>Vil du se hva som kan forbedres på din Google-profil?</h2></div>
+      <a class="button accent" href="kontakt.html">Kontakt oss</a>
+    </div>
+  </section>
+</main>
+<footer class="site-footer">
+  <div class="container footer-main">
+    <div><a class="logo" href="index.html"><span class="logo-mark">NIN</span><span class="logo-name">Næring i Nord</span></a><h2 style="margin-top:24px">Digital synlighet uten unødvendig støy.</h2></div>
+    <div class="footer-col"><h3>Kontakt</h3><a href="tel:+4776940000">76 94 00 00</a><a href="mailto:kontakt@nin.no">kontakt@nin.no</a><span>Bjønnesmoen 17<br>8521 Ankenes</span></div>
+    <div class="footer-col"><h3>Informasjon</h3><a href="om-oss.html">Om oss</a><a href="personvern.html">Personvern</a><a href="vilkar.html">Vilkår</a><a href="https://no.linkedin.com/company/n%C3%A6ring-i-nord" rel="noopener">LinkedIn</a></div>
+  </div>
+  <div class="container footer-bottom"><p>© <span data-year></span> Næring i Nord AS. Org.nr. 913 304 225.</p><p>Nettsiden bruker ingen analyse- eller markedsføringskapsler.</p></div>
+</footer>
+<script src="app.js"></script>
 </body>
 </html>
