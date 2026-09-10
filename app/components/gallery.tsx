@@ -1,0 +1,6 @@
+'use client';
+import {useState} from 'react';
+import {Dialog,DialogContent,DialogTitle,DialogDescription} from '@/components/ui/dialog';
+import {ArrowLeft,ArrowRight,Expand} from 'lucide-react';
+import {gallery} from '@/lib/content';
+export default function Gallery(){const [selected,setSelected]=useState<number|null>(null);return <><div className="gallery-grid">{gallery.map((src,i)=><button key={src} onClick={()=>setSelected(i)} className="gallery-item" aria-label={'Forstørr bilde '+(i+1)}><img src={src} alt={'Bilde '+(i+1)+' fra Ofoten Rørs galleri'} loading="lazy"/><span><Expand size={18}/> Se bilde</span></button>)}</div><Dialog open={selected!==null} onOpenChange={o=>{if(!o)setSelected(null)}}><DialogContent className="gallery-modal"><DialogTitle>Ofoten Rør · Galleri</DialogTitle><DialogDescription>Bilder fra bedriftens egen nettside.</DialogDescription>{selected!==null&&<><img src={gallery[selected]} alt={'Forstørret galleribilde '+(selected+1)}/><div className="gallery-controls"><button aria-label="Forrige bilde" onClick={()=>setSelected((selected+gallery.length-1)%gallery.length)}><ArrowLeft/></button><span>{selected+1} / {gallery.length}</span><button aria-label="Neste bilde" onClick={()=>setSelected((selected+1)%gallery.length)}><ArrowRight/></button></div></>}</DialogContent></Dialog></>}

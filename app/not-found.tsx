@@ -1,0 +1,1 @@
+import Link from 'next/link'; export default function NotFound(){return <section className="section"><span className="eyebrow">404</span><h1 style={{fontSize:'3rem'}}>Denne siden finnes ikke.</h1><p style={{margin:'25px 0'}}>Du finner tjenester, inspirasjon og kontaktinformasjon fra forsiden.</p><Link className="btn navy" href="/">Til forsiden</Link></section>}
